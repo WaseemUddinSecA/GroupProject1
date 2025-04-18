@@ -1,0 +1,152 @@
+.aboutHero {
+    text-align: center;
+    padding: 4rem 1rem;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 3rem;
+}
+
+.aboutTitle {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.aboutSubtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.aboutContent {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.aboutSection {
+    margin-bottom: 4rem;
+}
+
+.sectionTitle {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.aboutText {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.valuesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.valueCard {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.valueCard:hover {
+    transform: translateY(-5px);
+}
+
+.valueIcon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.valueTitle {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.valueDescription {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.teamGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.teamMember {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.teamMember:hover {
+    transform: translateY(-5px);
+}
+
+.memberIcon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    transition: transform 0.3s ease;
+}
+
+.teamMember:hover .memberIcon {
+    transform: scale(1.1);
+}
+
+.memberName {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.memberRole {
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
+.memberBio {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .aboutTitle {
+        font-size: 2rem;
+    }
+
+    .aboutSubtitle {
+        font-size: 1rem;
+    }
+
+    .valuesGrid,
+    .teamGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .valueCard,
+    .teamMember {
+        padding: 1.5rem;
+    }
+}
